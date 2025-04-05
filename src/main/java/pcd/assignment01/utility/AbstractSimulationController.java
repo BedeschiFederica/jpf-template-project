@@ -23,8 +23,8 @@ public abstract class AbstractSimulationController implements SimulationControll
     protected final SuspendMonitor suspendMonitor;
 
     public AbstractSimulationController() {
-        this.suspendMonitor = new SuspendMonitor();
-        this.stopFlag = new Flag();
+        this.suspendMonitor = null;//new SuspendMonitor();
+        this.stopFlag = null;//new Flag();
         //this.view = new BoidsView(this, SCREEN_WIDTH, SCREEN_HEIGHT);
     }
 
@@ -37,8 +37,8 @@ public abstract class AbstractSimulationController implements SimulationControll
                 MAX_SPEED,
                 PERCEPTION_RADIUS,
                 AVOID_RADIUS);
-        this.stopFlag.reset();
-        this.suspendMonitor.resume();
+        //this.stopFlag.reset();
+        //this.suspendMonitor.resume();
     }
 
     @Override

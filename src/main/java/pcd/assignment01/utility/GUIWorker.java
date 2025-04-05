@@ -38,9 +38,9 @@ public class GUIWorker implements Runnable {
                 throw new RuntimeException(e);
             }
 
-            final long t1 = System.currentTimeMillis();
+            /*final long t1 = System.currentTimeMillis();
             final long dtElapsed = t1 - t0;
-            final int frameRatePeriod = 1000 / FRAMERATE;
+            final int frameRatePeriod = 1000 / FRAMERATE;*/
             /*if (dtElapsed < frameRatePeriod) {
                 try {
                     Thread.sleep(frameRatePeriod - dtElapsed);
@@ -51,7 +51,7 @@ public class GUIWorker implements Runnable {
                 this.frameRate = (int) (1000 / dtElapsed);
             }*/
             //this.view.update(this.frameRate);
-            this.t0 = System.currentTimeMillis();
+            //this.t0 = System.currentTimeMillis();
         }
     }
 
